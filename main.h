@@ -126,7 +126,7 @@ array<TypeArray> array<TypeArray>::operator/(const TypeArray &rhs)
 	{
 		try
 		{
-			if (rhs == 0) throw "\n\nДеление на ноль!\n";
+			if (rhs == 0) throw "\n\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ!\n";
 			else
 			result.arr[i] = arr[i] / rhs;
 		}
@@ -279,7 +279,7 @@ array<TypeArray> array<TypeArray>::operator/(const array<TypeArray> &rhs)
 		{
 			try
 				{
-					if (rhs.arr[i] == 0) throw "\n\nДеление на ноль! Не все полученые результаты правильные\n";
+					if (rhs.arr[i] == 0) throw "\n\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ! пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
 					else
 					result.arr[i] = arr[i] / rhs.arr[i];
 				}
@@ -304,7 +304,7 @@ array<TypeArray> array<TypeArray>::operator/(const array<TypeArray> &rhs)
 			{
 				try
 				{
-					if (rhs.arr[i] == 0) throw "\n\nДеление на ноль! Не все полученые результаты правильные\n";
+					if (rhs.arr[i] == 0) throw "\n\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ! пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
 					else
 					result.arr[i] = arr[i] / rhs.arr[i];
 				}
@@ -328,7 +328,7 @@ array<TypeArray> array<TypeArray>::operator/(const array<TypeArray> &rhs)
 			{
 				try
 				{
-					if (rhs.arr[i] == 0) throw "\n\nДеление на ноль! Не все полученые результаты правильные\n";
+					if (rhs.arr[i] == 0) throw "\n\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ! пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
 					else
 					result.arr[i] = arr[i] / rhs.arr[i];
 				}
@@ -340,4 +340,16 @@ array<TypeArray> array<TypeArray>::operator/(const array<TypeArray> &rhs)
 			}
 		    return result;
 		}
+		int CheckFlt(long double t)
+}
+{
+ if (fabsl(t)>FLT_MAX)
+  {
+   cout << ErrorLimits;
+   cout << Explanation
+        << FLT_MIN << To << FLT_MAX << endl;
+   return 1;
+   }
+ return 0;
+}
 }
