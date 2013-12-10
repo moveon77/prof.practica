@@ -75,15 +75,8 @@ istream &operator>>(istream &input, const array<TypeArray> &rhs)
 	return input;
 }
 
-template <class TypeArray>
-array<TypeArray> array<TypeArray>::operator=(const TypeArray &rhs)
-{
-	for (int i = 0; i < size; i++)
-	{
-		arr[i] = rhs;
-	}
-	return *this;
-}
+
+
 
 template <class TypeArray>
 array<TypeArray> array<TypeArray>::operator+(const TypeArray &rhs)
@@ -126,7 +119,7 @@ array<TypeArray> array<TypeArray>::operator/(const TypeArray &rhs)
 	{
 		try
 		{
-			if (rhs == 0) throw "\n\nДеление на ноль!\n";
+			if (rhs == 0) throw "\n\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ!\n";
 			else
 			result.arr[i] = arr[i] / rhs;
 		}
@@ -279,7 +272,7 @@ array<TypeArray> array<TypeArray>::operator/(const array<TypeArray> &rhs)
 		{
 			try
 				{
-					if (rhs.arr[i] == 0) throw "\n\nДеление на ноль! Не все полученые результаты правильные\n";
+					if (rhs.arr[i] == 0) throw "\n\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ! пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
 					else
 					result.arr[i] = arr[i] / rhs.arr[i];
 				}
@@ -304,7 +297,7 @@ array<TypeArray> array<TypeArray>::operator/(const array<TypeArray> &rhs)
 			{
 				try
 				{
-					if (rhs.arr[i] == 0) throw "\n\nДеление на ноль! Не все полученые результаты правильные\n";
+					if (rhs.arr[i] == 0) throw "\n\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ! пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
 					else
 					result.arr[i] = arr[i] / rhs.arr[i];
 				}
@@ -328,7 +321,7 @@ array<TypeArray> array<TypeArray>::operator/(const array<TypeArray> &rhs)
 			{
 				try
 				{
-					if (rhs.arr[i] == 0) throw "\n\nДеление на ноль! Не все полученые результаты правильные\n";
+					if (rhs.arr[i] == 0) throw "\n\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ! пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
 					else
 					result.arr[i] = arr[i] / rhs.arr[i];
 				}
